@@ -2,8 +2,8 @@
 from typing import Dict
 import re
 
-import data
-from exception import InvalidCharacterException, InvalidTelephoneNumberException
+from . import data
+from .exception import InvalidCharacterException, InvalidTelephoneNumberException
 
 number_and_hyphen_regexp = re.compile(r'^[−ー0-9０-９-]+$')
 telephone_number_regexp = re.compile(r'^[0-9０-９]{10,11}$')  # ハイフン無し

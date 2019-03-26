@@ -4,8 +4,8 @@ import os
 
 
 long_description = 'Japanese Telephone Number Utility'
-if os.path.exists('README.txt'):
-    long_description = open('README.txt').read()
+if os.path.exists('README.rst'):
+    long_description = open('README.rst').read()
 
 setup(
     name='jptel',
@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     license='MIT',
     author='zenwerk',
-    author_email='zenwerk@gmail.com',
+    author_email='zenwerk@localhost',
     url='https://github.com/zenwerk/jptel-py',
     keywords='japaneses telephone number',
     packages=find_packages(),
