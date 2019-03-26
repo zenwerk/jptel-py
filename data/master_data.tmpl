@@ -1,0 +1,7 @@
+{% for index, area_codes in area_code_dict.items() -%}
+area_code_{{ index }} = [
+{% for area_code in area_codes %}    '{{ area_code }}',
+{% endfor -%}
+]
+
+{% endfor %}
