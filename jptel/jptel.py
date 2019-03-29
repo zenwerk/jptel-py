@@ -80,7 +80,9 @@ def split(src: str) -> Dict[str, str]:
 def validate(src: str) -> bool:
     if not telephone_number_regexp.fullmatch(src) and not telephone_number_with_hyphen_regex.fullmatch(src):
         return False
-    if not split(src):
+    try:
+        split(src)
+    except (InvalidTelephoneNumberException, InvalidTelephoneNumberException):
         return False
     return True
 
