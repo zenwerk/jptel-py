@@ -9,7 +9,7 @@ if os.path.exists('README.rst'):
 
 setup(
     name='jptel',
-    version='0.1.1',
+    version='0.1.2',
     description='Japanese Telephone Number Utility',
     long_description=long_description,
     license='MIT',
